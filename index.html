@@ -60,14 +60,44 @@
     <footer class="footer">
       <div class="contenedor">
         <div class="contacto">
-          <img src="images/invie-white.png" alt="Logotipo Blanco">
+          <img src="images/invie-white.png" alt="Logotipo Blanco" />
           <a href="tel:+573024456678"><strong>Telefono: </strong><span>3213992410</span></a>
           <a href="mailto:contacto@invie.com"><strong>E-mail: </strong><span>contacto@invie.com</span></a>
         </div>
-        <div class="formulario">
-          formulario de contacto
-        </div>
-      </div>      
+        <form class="formulario">
+          <label for="nombre">Nombre: </label>
+          <input type="text" required id="nombre" name="nombre" />
+          <label for="email">E-mail: </label>
+          <input type="email" required id="email" name="email" />
+          <div class="sexo">
+            <label for="mujer">
+              <input type="radio" required id="mujer" name="sexo" value="mujer" />Mujer
+            </label>
+            <label for="hombre">
+              <input type="radio" required id="hombre" name="sexo" value="hombre" />Hombre
+            </label>
+          </div>
+          <div class="intereses">
+            <label for="cotizacion">
+              <input type="checkbox" required id="cotizacion" name="intereses" value="cotizacion" />Cotizacion
+            </label>
+            <label for="reclamos">
+              <input type="checkbox" required id="reclamos" name="intereses" value="reclamos" />Reclamos
+            </label>
+            <label for="comentarios">
+              <input type="checkbox" required id="comentarios" name="intereses" value="comentarios" />Comentarios
+            </label>
+            <label for="otros">
+              <input type="checkbox" required id="otros" name="intereses" value="otros" />Otros
+            </label>
+          </div>
+          <div class="">
+            <label for="asunto">Asunto</label>
+          <textarea name="Asunto" id="asunto" rows="7" cols="30"></textarea>
+          <input type="submit" name="" value="Enviar" />
+          </div>
+        </form>
+      </div>
     </footer>
   </body>
 </html>
